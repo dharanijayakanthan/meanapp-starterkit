@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GRID</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .container {
+
+      display: grid;
+position: relative;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(259px, auto);
+      grid-gap: 2px;
+      color:grey;
+
+    }
+    .container>div {
+      background-color: #ffd27f;
+      text-align: center;
+      padding: 50px;
+    }
+    .container>div:nth-child(even) {
+      background-color: #ffa500;
+    }
+    .one {
+      grid-column: 1/3;
+      transition: 6s;
+    }
+    .container>div:nth-child(odd):hover{
+      transform: rotateX(360deg);
+      animation-name: example1;
+      animation-duration: 6s;
+      color:white;
+      font-size: 20px;
+    }
+    .container>div:nth-child(even):hover {
+      transform: rotateY(360deg);
+      animation-name: example1;
+      animation-duration: 6s;
+      color:white;
+
+    }
+    @keyframes example1 {
+      0% {
+        background-color: #ffd27f;
+      }
+      20% {
+        background-color: #ffc966;
+      }
+      50% {
+        background-color: #ffc04c;
+      }
+      70% {
+        background-color: #ffb732;
+      }
+      90% {
+        background-color: #ffae19;
+      }
+      100% {
+        background-color: #ffa500;
+      }
+    }
+    .two {
+      transition: 6s;
+    }
+    .three {
+      grid-row: 2/4;
+      transition: 6s;
+    }
+    .four {
+      grid-column: 2/4;
+      transition: 6s;
+    }
+    .five {
+      transition: 6s;
+    }
+    .six {
+      transition: 6s;
+    }
+    .seven {
+      grid-column: 1/3;
+      transition: 6s;
+    }
+    .eight {
+      grid-column: 3/4;
+      grid-row: 4/7;
+      transition: 6s;
+    }
+    .nine {
+      transition: 6s;
+    }
+    .ten {
+      transition: 6s;
+    }
+    .eleven {
+      transition: 6s;
+    }
+    .twelve {
+      transition: 6s;
+    }
+    .gridsss{
+
+      display:grid;
+      grid-template-columns: repeat(12,1fr);
+      grid-auto-rows: minmax(100%,auto);
+      border:1px solid grey;
+
+height:100%;
+width:1230px;
+      position:absolute;
+      top:0;
+      left:0;
+      background:transparent;
+
+    }
+    .gridsss>p{
+    }
+    .btn-css{
+      text-align: center;
+      padding:50px;
+    }
+    .btn-txt{
+      color:grey;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:grey">YOU ARE INTO THE MAGIC WORLD OF GRID</h1>
+  <h5 style="text-align:center; color:orange"><i class="fa fa-refresh fa-spin fa-5x fa-fw"></i></h5>
+
+
+  <div class="container">
+
+    <div class="one">
+      <i class="fa fa-camera-retro fa-5x"></i>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus natus eveniet veniam numquam fugit a vitae est, amet deserunt quisquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A soluta dicta blanditiis, doloribus aspernatur magni, eum modi labore consectetur aliquid minus minima voluptates pariatur odio magnam similique mollitia, eligendi molestiae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequatur iure nostrum odio aliquam doloribus, accusantium cumque ipsum fugiat aspernatur modi facilis est inventore. Eum animi architecto inventore dolorum laborum.</p>
+    </div>
+    <div class="two">
+      <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit nobis sunt nulla odio ab rerum, tenetur facilis possimus illum, saepe! Nostrum, repellendus rerum provident eius enim quasi voluptates vel!</p>
+    </div>
+    <div class="three">
+      <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ad nostrum inventore, quas quasi quo eos minus, suscipit tempora unde nisi ullam beatae facilis aperiam esse eius distinctio mollitia voluptas molestiae? Esse at animi laudantium accusantium, perspiciatis explicabo aliquam obcaecati temporibus quibusdam quia tempore. Mollitia velit maiores voluptas illum atque fugit magnam. Pariatur eos facilis eum unde impedit assumenda tempora iste? Deserunt unde voluptate at vero id nulla dolor aut ex quasi! Amet dolorem vitae voluptatum quos, veniam repudiandae numquam saepe enim eaque fugit nisi necessitatibus dicta deserunt id sapiente quod vero consectetur harum odit in rem rerum molestias dignissimos!</p>
+    </div>
+    <div class="four">
+      <i class="fa fa-book fa-fw fa-5x" aria-hidden="true"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate in distinctio eos! Perferendis architecto molestias quod voluptates corporis deleniti repellat, distinctio, excepturi ducimus? Sed porro dolorum recusandae fugiat, aspernatur minus enim ab rem autem. In quisquam sunt id saepe, a.</p>
+    </div>
+    <div class="five">
+      <i class="fa fa-pencil fa-fw fa-5x" aria-hidden="true"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus numquam velit voluptatibus similique, eveniet. Enim voluptate quisquam totam eius iure, velit odit eaque unde illum, recusandae, alias vitae ipsa sunt!</p>
+    </div>
+    <div class="six">
+      <i class="fa fa-circle-o-notch fa-spin fa-5x fa-fw"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque incidunt, repellendus beatae accusantium. Ullam eveniet, asperiores vel quibusdam. Eveniet doloremque eaque neque et impedit corporis fugit odit magni qui aliquam!</p>
+    </div>
+    <div class="seven">
+      <i class="fa fa-home fa-fw fa-5x" aria-hidden="true"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto laboriosam, vel, aperiam quia ex fuga, harum sunt cupiditate tempore provident voluptatem nulla ab sed rerum facilis. Aliquid eos maxime quas accusamus alias vero consequatur ut reiciendis eum esse, quam iusto dignissimos! Vel, libero, necessitatibus! Recusandae commodi omnis accusamus quasi vero, ullam aut ab expedita tempore distinctio nostrum alias repellat saepe ducimus libero illo voluptatibus aliquid vitae aperiam obcaecati, suscipit consectetur pariatur doloremque dolores. Maiores qui doloribus, soluta labore laboriosam.</p>
+    </div>
+    <div class="eight">
+      <i class="fa fa-cog fa-fw fa-5x" aria-hidden="true"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque architecto porro quia numquam ut optio voluptatem animi quas! Ea aliquam reiciendis, voluptates quis corporis, ad, mollitia sapiente ducimus sunt amet, eum explicabo perferendis? Est saepe perferendis quas, assumenda cum omnis perspiciatis provident deleniti illum facilis autem, odit, at fuga amet! Velit ex et soluta in sit, aspernatur facere cum quos, exercitationem quod, repellendus laborum pariatur ab, suscipit. Quas quis, modi neque, optio mollitia rem iure! Repudiandae error neque vero itaque assumenda possimus illum, labore, officiis mollitia hic totam illo, quam, cumque eveniet nisi ex eaque. Nulla voluptate dolor provident. Sint?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusamus saepe, mollitia sed laborum. Quia voluptates illum cum perspiciatis impedit iure earum possimus totam excepturi animi laborum facere sequi veniam omnis, dignissimos doloribus magnam mollitia quaerat maxime tempore temporibus, tenetur a ducimus quibusdam. Cumque molestias, nihil ut, quod voluptas incidunt aperiam illum amet perspiciatis ducimus minus ratione accusamus nobis soluta nam alias nostrum eaque expedita recusandae? Ducimus at non eos quibusdam esse culpa, est numquam quos corrupti reprehenderit eaque odio optio aut quod repellendus, tempora minima illo, assumenda modi. Porro eum ipsam voluptatibus impedit minus deleniti quia cum dicta ipsa!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde praesentium, aut laudantium. Minima unde reiciendis culpa eius iste aut autem ipsam quod quis aliquid odio magni adipisci ipsum distinctio, facere, aperiam qui incidunt labore delectus exercitationem consequatur et amet, totam consequuntur! Autem fuga, aliquid excepturi sed, amet animi quia sequi impedit officia, hic beatae! Eaque accusamus doloribus reprehenderit minus. Ipsum est aspernatur eveniet, cum nihil voluptatem voluptates doloribus illo optio asperiores. Sunt id natus suscipit quaerat optio amet harum temporibus, sint cupiditate tempore ea esse. Dolores corporis reprehenderit assumenda ex aspernatur, adipisci esse nisi sit culpa rem laudantium maiores voluptates?</p>
+    </div>
+    <div class="nine">
+      <i class="fa fa-shield fa-rotate-90 fa-5x"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="ten">
+      <p style="border-radius:25px; padding:20px;background-color:#ffd27f;">Lorem ipsum dolor sit amet. laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dignissimos libero impedit nam magnam alias minus obcaecati quisquam sunt asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto laboriosam, vel, aperiam quia ex fuga, harum sunt cupiditate tempore provident voluptatem nulla ab sed rerum facilis. Aliquid eos maxime quas accusamus alias vero consequatur ut reiciendis eum esse, quam iusto dignissimos! Vel, libero, necessitatibus! Recusandae commodi omnis accusamus quasi vero, ullamlaboriosam.</p>
+    </div>
+    <div class="eleven">
+      <i class="fa fa-cog fa-fw fa-5x" aria-hidden="true"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fuga, quis blanditiis nisi, quasi neque vitae repellendus pariatur unde corporis aut? Odit quibusdam, quaerat ut placeat veniam atque id culpa.</p>
+    </div>
+    <div class="tweleve">
+      <i class="fa fa-square-o fa-5x"></i>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad architecto dolor quos, quaerat veniam at, nostrum id commodi pariatur maiores deserunt sequi excepturi, iusto esse nesciunt rem possimus explicabo.</p>
+    </div>
+
+  </div>
+
+  <div class="btn-css">
+    <p><span class="btn-txt">ADD MORE GRID</span></p>
+  <input type="button" value="+" style="background-color:grey; font-size:50px; color:black; padding:29px; border:none; border-radius:40px;">
+  </div>
+
+</body>
+</html>
